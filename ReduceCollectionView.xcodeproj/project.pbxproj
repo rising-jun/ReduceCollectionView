@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726B3D39262435F50063010A /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D38262435F50063010A /* PickerData.swift */; };
+		726B3D3D26243A930063010A /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D3C26243A930063010A /* StartViewModel.swift */; };
+		726B3D4F262449100063010A /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D4E262449100063010A /* PostVC.swift */; };
+		726B3D54262449BB0063010A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D53262449BB0063010A /* PostView.swift */; };
 		72A223B3262429C80059B63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B2262429C80059B63C /* AppDelegate.swift */; };
-		72A223B5262429C80059B63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B4262429C80059B63C /* SceneDelegate.swift */; };
-		72A223B7262429C80059B63C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B6262429C80059B63C /* ViewController.swift */; };
-		72A223BA262429C80059B63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A223B8262429C80059B63C /* Main.storyboard */; };
+		72A223B7262429C80059B63C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B6262429C80059B63C /* StartVC.swift */; };
 		72A223BC262429C90059B63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A223BB262429C90059B63C /* Assets.xcassets */; };
 		72A223BF262429C90059B63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A223BD262429C90059B63C /* LaunchScreen.storyboard */; };
+		72A223DC26242E0B0059B63C /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223DB26242E0B0059B63C /* BaseClass.swift */; };
+		72A223E0262430340059B63C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223DF262430340059B63C /* StartView.swift */; };
+		DCA8DD7E9CCF5423D0560B74 /* Pods_ReduceCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFEE006F7527AF5C4099774 /* Pods_ReduceCollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59B537F2D49FEB8F2037179B /* Pods-ReduceCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduceCollectionView.release.xcconfig"; path = "Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		726B3D38262435F50063010A /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		726B3D3C26243A930063010A /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		726B3D4E262449100063010A /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		726B3D53262449BB0063010A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		72A223AF262429C80059B63C /* ReduceCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduceCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A223B2262429C80059B63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72A223B4262429C80059B63C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72A223B6262429C80059B63C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72A223B9262429C80059B63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72A223B6262429C80059B63C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		72A223BB262429C90059B63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A223BE262429C90059B63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A223C0262429C90059B63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A223DB26242E0B0059B63C /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		72A223DF262430340059B63C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		9AA723A783EF42DE5A8C3325 /* Pods-ReduceCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduceCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		EAFEE006F7527AF5C4099774 /* Pods_ReduceCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduceCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA8DD7E9CCF5423D0560B74 /* Pods_ReduceCollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		726B3D37262434F30063010A /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				726B3D38262435F50063010A /* PickerData.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		726B3D4C262448EA0063010A /* postVC */ = {
+			isa = PBXGroup;
+			children = (
+				726B3D4D262448FA0063010A /* New Group */,
+				726B3D4E262449100063010A /* PostVC.swift */,
+				726B3D53262449BB0063010A /* PostView.swift */,
+			);
+			path = postVC;
+			sourceTree = "<group>";
+		};
+		726B3D4D262448FA0063010A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		72A223A6262429C80059B63C = {
 			isa = PBXGroup;
 			children = (
 				72A223B1262429C80059B63C /* ReduceCollectionView */,
 				72A223B0262429C80059B63C /* Products */,
+				87ABD5ED7EB756704E341065 /* Pods */,
+				F61053DB20B07D02690E70B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +96,51 @@
 		72A223B1262429C80059B63C /* ReduceCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				726B3D4C262448EA0063010A /* postVC */,
+				72A223DA26242DF50059B63C /* base */,
+				72A223D926242DC80059B63C /* startVC */,
 				72A223B2262429C80059B63C /* AppDelegate.swift */,
-				72A223B4262429C80059B63C /* SceneDelegate.swift */,
-				72A223B6262429C80059B63C /* ViewController.swift */,
-				72A223B8262429C80059B63C /* Main.storyboard */,
 				72A223BB262429C90059B63C /* Assets.xcassets */,
 				72A223BD262429C90059B63C /* LaunchScreen.storyboard */,
 				72A223C0262429C90059B63C /* Info.plist */,
 			);
 			path = ReduceCollectionView;
+			sourceTree = "<group>";
+		};
+		72A223D926242DC80059B63C /* startVC */ = {
+			isa = PBXGroup;
+			children = (
+				726B3D37262434F30063010A /* delegate */,
+				72A223B6262429C80059B63C /* StartVC.swift */,
+				72A223DF262430340059B63C /* StartView.swift */,
+				726B3D3C26243A930063010A /* StartViewModel.swift */,
+			);
+			path = startVC;
+			sourceTree = "<group>";
+		};
+		72A223DA26242DF50059B63C /* base */ = {
+			isa = PBXGroup;
+			children = (
+				72A223DB26242E0B0059B63C /* BaseClass.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		87ABD5ED7EB756704E341065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA723A783EF42DE5A8C3325 /* Pods-ReduceCollectionView.debug.xcconfig */,
+				59B537F2D49FEB8F2037179B /* Pods-ReduceCollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F61053DB20B07D02690E70B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFEE006F7527AF5C4099774 /* Pods_ReduceCollectionView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A223C3262429C90059B63C /* Build configuration list for PBXNativeTarget "ReduceCollectionView" */;
 			buildPhases = (
+				962D602ADD5970C990EE3166 /* [CP] Check Pods Manifest.lock */,
 				72A223AB262429C80059B63C /* Sources */,
 				72A223AC262429C80059B63C /* Frameworks */,
 				72A223AD262429C80059B63C /* Resources */,
+				1D4472C776277712F429C2AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +204,72 @@
 			files = (
 				72A223BF262429C90059B63C /* LaunchScreen.storyboard in Resources */,
 				72A223BC262429C90059B63C /* Assets.xcassets in Resources */,
-				72A223BA262429C80059B63C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D4472C776277712F429C2AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962D602ADD5970C990EE3166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduceCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72A223AB262429C80059B63C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A223B7262429C80059B63C /* ViewController.swift in Sources */,
+				72A223B7262429C80059B63C /* StartVC.swift in Sources */,
+				726B3D3D26243A930063010A /* StartViewModel.swift in Sources */,
+				726B3D54262449BB0063010A /* PostView.swift in Sources */,
+				726B3D4F262449100063010A /* PostVC.swift in Sources */,
+				726B3D39262435F50063010A /* PickerData.swift in Sources */,
+				72A223DC26242E0B0059B63C /* BaseClass.swift in Sources */,
 				72A223B3262429C80059B63C /* AppDelegate.swift in Sources */,
-				72A223B5262429C80059B63C /* SceneDelegate.swift in Sources */,
+				72A223E0262430340059B63C /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72A223B8262429C80059B63C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72A223B9262429C80059B63C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72A223BD262429C90059B63C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +399,7 @@
 		};
 		72A223C4262429C90059B63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA723A783EF42DE5A8C3325 /* Pods-ReduceCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +419,7 @@
 		};
 		72A223C5262429C90059B63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B537F2D49FEB8F2037179B /* Pods-ReduceCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
