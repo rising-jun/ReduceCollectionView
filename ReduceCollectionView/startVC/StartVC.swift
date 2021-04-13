@@ -41,10 +41,16 @@ class StartVC: BaseViewController {
     
     override func bindViewModel() {
         super.bindViewModel()
+        
 
+        output.baseData?.filter{$0.count != 0}.drive {[weak self] (arr) in
+            self?.postVC.baseArr_ = arr
+        }.disposed(by: disposeBag)
+        
         output.preparingViews?.filter{$0 == true}.drive { [weak self] (bool) in
             guard let self = self else { return }
             self.view = self.startView
+            
             self.startView.pickerView.delegate = self.pickerData
             self.startView.pickerView.dataSource = self.pickerData
             self.pickerData.selectedRow.onNext(1)
@@ -56,7 +62,7 @@ class StartVC: BaseViewController {
             guard let self = self else { return }
             switch vc{
             case .postVC:
-                self.present(self.postVC, animated: false, completion: nil)
+                self.present(self.postVC, animated: true)
                 break
             case .startVC:
                 break

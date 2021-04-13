@@ -11,16 +11,24 @@ import RxCocoa
 
 class StartViewModel: ViewModelType{
     let disposeBag = DisposeBag()
+    let startModel = StartModel()
     
     func transform(input: Input) -> Output {
         let preparingViews = BehaviorRelay(value: false)
-        let moveNextPage = BehaviorRelay(value: VC.postVC)
+        let moveNextPage = BehaviorRelay(value: VC.startVC)
         let secRelay = BehaviorRelay(value: 0)
+        let baseData = BehaviorRelay(value: [FlickInfo]())
         
-        input.viewState?.subscribe { (state) in
+        input.viewState?.subscribe { [weak self] (state) in
             switch state.element{
             case .viewWillAppear:
                 preparingViews.accept(true)
+                
+                self?.startModel.getBaseData().subscribe { (arr) in
+                    baseData.accept(arr.element ?? [FlickInfo]())
+                }.disposed(by: self!.disposeBag)
+
+                
             break
             default : break
             }
@@ -33,10 +41,12 @@ class StartViewModel: ViewModelType{
         input.secChanged?.distinctUntilChanged().subscribe{ sec in
             secRelay.accept(sec)
         }.disposed(by: disposeBag)
+
         
         return Output(preparingViews: preparingViews.asDriver(),
                       moveScreen: moveNextPage.asDriver(),
-                      secVal: secRelay.asDriver())
+                      secVal: secRelay.asDriver(),
+                      baseData: baseData.asDriver())
     
     }
     
@@ -51,6 +61,7 @@ class StartViewModel: ViewModelType{
         var preparingViews: Driver<Bool>?
         var moveScreen: Driver<VC>?
         var secVal: Driver<Int>?
+        var baseData: Driver<[FlickInfo]>?
     }
     
 }

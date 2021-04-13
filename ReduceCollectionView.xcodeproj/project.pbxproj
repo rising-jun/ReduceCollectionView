@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724FAA91262566A80044AD62 /* StartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FAA90262566A80044AD62 /* StartModel.swift */; };
+		724FAA9C26256FED0044AD62 /* FlickInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FAA9B26256FED0044AD62 /* FlickInfo.swift */; };
 		726B3D39262435F50063010A /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D38262435F50063010A /* PickerData.swift */; };
 		726B3D3D26243A930063010A /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D3C26243A930063010A /* StartViewModel.swift */; };
 		726B3D4F262449100063010A /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D4E262449100063010A /* PostVC.swift */; };
 		726B3D54262449BB0063010A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B3D53262449BB0063010A /* PostView.swift */; };
+		729099EE262582B6006A53F2 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729099ED262582B6006A53F2 /* PostViewModel.swift */; };
+		729099F1262582C9006A53F2 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729099F0262582C9006A53F2 /* PostModel.swift */; };
 		72A223B3262429C80059B63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B2262429C80059B63C /* AppDelegate.swift */; };
 		72A223B7262429C80059B63C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A223B6262429C80059B63C /* StartVC.swift */; };
 		72A223BC262429C90059B63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A223BB262429C90059B63C /* Assets.xcassets */; };
@@ -22,10 +26,14 @@
 
 /* Begin PBXFileReference section */
 		59B537F2D49FEB8F2037179B /* Pods-ReduceCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduceCollectionView.release.xcconfig"; path = "Target Support Files/Pods-ReduceCollectionView/Pods-ReduceCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		724FAA90262566A80044AD62 /* StartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModel.swift; sourceTree = "<group>"; };
+		724FAA9B26256FED0044AD62 /* FlickInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickInfo.swift; sourceTree = "<group>"; };
 		726B3D38262435F50063010A /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
 		726B3D3C26243A930063010A /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		726B3D4E262449100063010A /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		726B3D53262449BB0063010A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		729099ED262582B6006A53F2 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		729099F0262582C9006A53F2 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		72A223AF262429C80059B63C /* ReduceCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduceCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A223B2262429C80059B63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A223B6262429C80059B63C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -50,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724FAA9E26257BD50044AD62 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				724FAA9B26256FED0044AD62 /* FlickInfo.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		726B3D37262434F30063010A /* delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +80,8 @@
 				726B3D4D262448FA0063010A /* New Group */,
 				726B3D4E262449100063010A /* PostVC.swift */,
 				726B3D53262449BB0063010A /* PostView.swift */,
+				729099ED262582B6006A53F2 /* PostViewModel.swift */,
+				729099F0262582C9006A53F2 /* PostModel.swift */,
 			);
 			path = postVC;
 			sourceTree = "<group>";
@@ -96,6 +114,7 @@
 		72A223B1262429C80059B63C /* ReduceCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				724FAA9E26257BD50044AD62 /* entity */,
 				726B3D4C262448EA0063010A /* postVC */,
 				72A223DA26242DF50059B63C /* base */,
 				72A223D926242DC80059B63C /* startVC */,
@@ -114,6 +133,7 @@
 				72A223B6262429C80059B63C /* StartVC.swift */,
 				72A223DF262430340059B63C /* StartView.swift */,
 				726B3D3C26243A930063010A /* StartViewModel.swift */,
+				724FAA90262566A80044AD62 /* StartModel.swift */,
 			);
 			path = startVC;
 			sourceTree = "<group>";
@@ -257,12 +277,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A223B7262429C80059B63C /* StartVC.swift in Sources */,
+				729099F1262582C9006A53F2 /* PostModel.swift in Sources */,
 				726B3D3D26243A930063010A /* StartViewModel.swift in Sources */,
 				726B3D54262449BB0063010A /* PostView.swift in Sources */,
 				726B3D4F262449100063010A /* PostVC.swift in Sources */,
 				726B3D39262435F50063010A /* PickerData.swift in Sources */,
 				72A223DC26242E0B0059B63C /* BaseClass.swift in Sources */,
 				72A223B3262429C80059B63C /* AppDelegate.swift in Sources */,
+				729099EE262582B6006A53F2 /* PostViewModel.swift in Sources */,
+				724FAA9C26256FED0044AD62 /* FlickInfo.swift in Sources */,
+				724FAA91262566A80044AD62 /* StartModel.swift in Sources */,
 				72A223E0262430340059B63C /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
